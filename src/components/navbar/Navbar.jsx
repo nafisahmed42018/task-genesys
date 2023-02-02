@@ -3,6 +3,7 @@ import './navbar.css';
 import CartIcon from '../../assets/cart';
 import SearchIcon from '../../assets/search';
 import LogIcon from '../../assets/log';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(true);
@@ -24,7 +25,9 @@ const Navbar = () => {
         </div>
         <div className='middle__section'>
           <div className='nav-link__wrapper'>
-            <div className='nav__link'>Home</div>
+            <Link className='nav__link' to='/'>
+              Home
+            </Link>
             <div className='nav__link'>Shop</div>
             <div className='nav__link'>About</div>
             <div className='nav__link'>Blog</div>
@@ -45,11 +48,14 @@ const Navbar = () => {
                 className='search__btn'
                 onClick={() => expandSearch(toggle)}
               >
-                {toggle ? <SearchIcon /> : <i class='bx bx-x'></i>}
+                {toggle ? <SearchIcon /> : <i className='bx bx-x'></i>}
               </button>
             </div>
             <button>
-              <LogIcon />
+              <Link to='/login'>
+                {' '}
+                <LogIcon />
+              </Link>
             </button>
             <button>
               <CartIcon />

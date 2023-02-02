@@ -25,14 +25,16 @@
 }
 
 .gallery__image {
-    width: 89%;
+  width: 89%;
   margin: 0rem 10rem;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  /* display: flex;
   gap: 2rem;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-between; */
   overflow: hidden;
-  overflow-x: scroll;
+  /* overflow-x: scroll; */
 }
 
 .gallery__image img {
