@@ -1,0 +1,15 @@
+/* Variables declared @App.css */
+.announcement__section {
+  display: block;
+  min-height: 4vh;
+  background-color: #040f16;
+  color: #fbeceb;
+}
+
+.announcement__text {
+  text-align: center;
+  font-size: 0.8125rem;
+  padding: 0.75rem 0rem;
+  font-family: var(--text-font);
+  font-weight: var(--medium-weight);
+}

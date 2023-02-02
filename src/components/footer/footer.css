@@ -1,0 +1,166 @@
+a {
+  background-color: transparent;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.footer__container {
+  background-color: #040f16;
+  height: 45vh;
+  color: white;
+  display: flex;
+  padding: 4rem 4rem;
+  gap: 7rem;
+}
+
+/* Left Section of Footer (About & Socials) */
+.left {
+  flex: 1;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.footer__about h2 {
+  font-family: var(--raj-font);
+  font-size: 2rem;
+  font-weight: var(--bold-weight);
+  margin-bottom: 2rem;
+}
+
+.footer__about p {
+  font-family: var(--text-font);
+  font-size: 0.9rem;
+  font-weight: var(--regular-weight);
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.footer__socials {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.social__links {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.social__links a {
+  border: 1px solid white;
+  padding: 0.125rem 0.25rem;
+}
+
+.social__links a:hover {
+  background-color: #2554d7;
+}
+
+.footer__socials h3 {
+  font-family: var(--raj-font);
+  font-weight: var(--semibold-weight);
+}
+
+/* Center section of Footer (Links)*/
+.center {
+  flex: 3;
+  display: inline-flex;
+  justify-content: space-between;
+}
+
+.footer__item h4 {
+  font-family: var(--raj-font);
+  font-size: 1.25rem;
+  font-weight: var(--semibold-weight);
+}
+
+.footer__item {
+  padding: 0.5rem 3.5rem 0.5rem 0rem;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  gap: 1.5rem;
+}
+
+.footer__item li {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.footer__item ul {
+  font-family: var(--text-font);
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: var(--regular-weight);
+}
+
+.footer__item ul:hover {
+  cursor: pointer;
+  color: #2554d7;
+}
+
+/* Right Section of Footer (Newsletter)*/
+.right {
+  flex: 2;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 0.8rem;
+  padding-bottom: 3rem;
+}
+
+.newsletter {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.newsletter h3 {
+  font-family: var(--raj-font);
+  font-weight: var(--semibold-weight);
+  font-size: 1.25rem;
+}
+
+.newsletter p {
+  width: 15rem;
+  font-family: var(--text-font);
+  font-size: 0.9rem;
+  font-weight: var(--regular-weight);
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.sign__up-input,
+.sign__up-btn {
+  height: 2.5rem;
+}
+
+.sign__up {
+  display: flex;
+  width: 20rem;
+  position: relative;
+  border: 1px solid white;
+}
+.sign__up-input {
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.8);
+  width: 75%;
+  padding: 0rem 0.5rem;
+  font-family: var(--text-font);
+  outline: none;
+}
+
+.sign__up-btn {
+  position: absolute;
+  width: 25%;
+  right: 0;
+  top: 0;
+  background-color: #2554d7;
+  color: white;
+  font-family: var(--raj-font);
+  font-size: 0.75rem;
+  font-weight: var(--bold-weight);
+  padding: 0.5rem 1rem;
+}

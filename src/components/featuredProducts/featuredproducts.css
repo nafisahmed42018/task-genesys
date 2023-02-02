@@ -1,0 +1,126 @@
+.featured__container {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.product__gallery {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+.title {
+  width: 75%;
+}
+.title__intro {
+  font-family: var(--apple-font);
+  color: #2554d7;
+  font-size: 1.25rem;
+}
+.title h1 {
+  font-family: var(--raj-font);
+  font-size: 3.5rem;
+  font-weight: var(--bold-weight);
+}
+
+.info {
+  color: #7b7d88;
+  padding: 3rem 5rem;
+  text-align: center;
+  font-family: var(--text-font);
+  font-size: 1rem;
+  font-weight: var(--regular-weight);
+}
+
+.slider__buttons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 0.25rem;
+  margin-bottom: 2rem;
+}
+
+.slider__buttons button {
+  display: flex;
+  color: white;
+  background-color: black;
+  border: 1px solid gray;
+  font-size: 1rem;
+}
+
+.product__list {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  overflow-x: scroll;
+}
+
+.product__item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.product__item img {
+  width: 300px;
+  height: 300px;
+}
+
+.product__name {
+  font-family: var(--raj-font);
+  font-weight: var(--semibold-weight);
+  font-size: 1rem;
+  margin-top: 0.75rem;
+  padding: 0.5rem 0rem;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.25rem;
+}
+
+.normal__price,
+.discounted__price,
+.previous__price {
+  font-family: var(--raj-font);
+  font-weight: var(--semibold-weight);
+}
+
+.normal__price {
+  font-size: 1.25rem;
+  color: #040f16;
+}
+
+.previous__price {
+  font-size: 1rem;
+  text-decoration: line-through 2px;
+  text-decoration-color: rgba(4, 15, 22, 0.468);
+  color: rgba(22, 4, 4, 0.5);
+}
+
+.discounted__price {
+  font-size: 1.25rem;
+  color: #d47969;
+}
+
+.view__products-btn {
+  font-family: var(--raj-font);
+  font-weight: var(--semibold-weight);
+  font-size: 1rem;
+  margin-top: 4rem;
+  padding: 1.5rem 2rem;
+  border: 2px solid #040f16;
+}
+
+.view__products-btn:hover {
+  color: white;
+  background-color: #040f16;
+}
